@@ -10,8 +10,7 @@
 					document.getElementById('app').click();
 				}
 
-				// iOS detection from: http://stackoverflow.com/a/9039885/177710
-				elseif(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				else if(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
 					document.write('<a style="font-family:"Arial, sans-serif; color:#666; text-decoration:none; font-size:16px; text-align:center; display:block; margin-top:30px;" id="app" href="https://apps.apple.com/us/app/breeze-for-patients/id1197472721">Please wait, you are being redirected</a>');
 					document.getElementById('app').click();
 				}
