@@ -2,22 +2,22 @@
 	<body>
 		<script>
 			const screenWidth = screen.width;
-			if(screenWidth > 50) {
+			if(screenWidth > 480) {
 				var userAgent = navigator.userAgent;
 
 				if (/android/i.test(userAgent)) {
-					document.write('<a id="app" href="https://play.google.com/store/apps/details?id=com.carecloud.carepay.patient">Please wait, you are being redirected</a>');
+					document.write('<a style="font-family:"Arial, sans-serif; color:#666; text-decoration:none; font-size:16px; text-align:center; display:block; margin-top:30px;" id="app" href="https://play.google.com/store/apps/details?id=com.carecloud.carepay.patient">Please wait, you are being redirected</a>');
 					document.getElementById('app').click();
 				}
 
 				// iOS detection from: http://stackoverflow.com/a/9039885/177710
 				elseif (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-					document.write('<a id="app" href="https://apps.apple.com/us/app/breeze-for-patients/id1197472721">Please wait, you are being redirected</a>');
+					document.write('<a style="font-family:"Arial, sans-serif; color:#666; text-decoration:none; font-size:16px; text-align:center; display:block; margin-top:30px;" id="app" href="https://apps.apple.com/us/app/breeze-for-patients/id1197472721">Please wait, you are being redirected</a>');
 					document.getElementById('app').click();
 				}
 
 				else {
-					document.write('<a id="app" href="https://apps.apple.com/us/app/breeze-for-patients/id1197472721">Please wait, you are being redirected</a>');
+					document.write('<a style="font-family:"Arial, sans-serif; color:#666; text-decoration:none; font-size:16px; text-align:center; display:block; margin-top:30px;" id="app" href="https://apps.apple.com/us/app/breeze-for-patients/id1197472721">Please wait, you are being redirected</a>');
 					document.getElementById('app').click();
 				}
 
