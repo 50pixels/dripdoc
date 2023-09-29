@@ -1,8 +1,13 @@
-<script>
-	const screenWidth = screen.width;
-	if(screenWidth > 480) {
-		window.location.replace("https://globo.com");
-	} else {
-		window.location.href = "https://google.com";
-	}
-</script>
+<html>
+	<body>
+		<script>
+			const screenWidth = screen.width;
+			if(screenWidth > 480) {
+				document.write('<a id="app" href="https://globo.com">Open App</a>');
+				document.getElementById('app').click();
+			} else {
+				window.location.href = "https://google.com";
+			}
+		</script>
+	</body>
+</html>
