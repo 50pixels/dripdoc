@@ -3,6 +3,9 @@
 		<script>
 			const screenWidth = screen.width;
 			if(screenWidth > 480) {
+				window.location.href = "https://web.gobreeze.com/";
+
+			} else {
 				var userAgent = navigator.userAgent;
 
 				if (/android/i.test(userAgent)) {
@@ -19,10 +22,6 @@
 					document.write('<a style="font-family:"Arial, sans-serif; color:#666; text-decoration:none; font-size:16px; text-align:center; display:block; margin-top:30px;" id="app" href="https://apps.apple.com/us/app/breeze-for-patients/id1197472721">Please wait, you are being redirected</a>');
 					document.getElementById('app').click();
 				}
-
-
-			} else {
-				window.location.href = "https://web.gobreeze.com/";
 			}
 		</script>
 	</body>
